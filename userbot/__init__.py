@@ -108,6 +108,21 @@ if bool(ENV):
 
     # Clean Welcome
     CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
+    
+    # CUSTOM PMPERMIT
+    CUSTOM_PMPERMIT = os.environ.get("CUSTOM_PMPERMIT", None)
+    
+    # CUSTOM BLOCK
+    CUSTOM_BLOCK = os.environ.get("CUSTOM_BLOCK", None)
+    
+    # CUSTOM AFK
+    CUSTOM_AFK = os.environ.get("CUSTOM_AFK", None)
+    
+    # FBAN USER
+    FBAN_USER = os.environ.get("FBAN_USER", None)
+
+    # FBAN REASON
+    FBAN_REASON = os.environ.get("FBAN_REASON", None)
 
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
