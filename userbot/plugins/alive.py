@@ -22,5 +22,5 @@ async def amireallyalive(alive):
 ` 🔹 My pro owner`: {DEFAULTUSER}
 [✨ GitHub Repository ✨](https://github.com/xditya/TeleBot)"""
 
-    await borg.forward_messages(alive.chat_id, 167, -1001195912925)
+    #await borg.forward_messages(alive.chat_id, 167, -1001195912925)
     await alive.delete()
