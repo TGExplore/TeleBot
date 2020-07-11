@@ -24,7 +24,7 @@ f"` 🔸 More info:` [TeleBot](https://telegra.ph/TeleBot-07-08)\n"
 f"` 🔹 Bot created by:` [Aditya 🇮🇳](tg://user?id=719195224)\n"
 f"` 🔸 Database Status:` **All OK 👌!**\n"
 f"` 🔹 My pro owner`: {DEFAULTUSER}\n"
-f"[✨ GitHub Repository ✨](https://github.com/xditya/TeleBot)", link_preview = False)
+"[✨ GitHub Repository ✨](https://github.com/xditya/TeleBot)", link_preview = False)
     
     req = requests.get("https://telegra.ph/file/0670190de8e3bddea6d95.png")
     req.raise_for_status()
