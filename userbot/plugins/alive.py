@@ -26,16 +26,16 @@ f"` 🔸 Database Status:` **All OK 👌!**\n"
 f"` 🔹 My pro owner`: {DEFAULTUSER}\n"
 "[✨ GitHub Repository ✨](https://github.com/xditya/TeleBot)", link_preview = False)
     
-    req = requests.get("https://telegra.ph/file/0670190de8e3bddea6d95.png")
-    req.raise_for_status()
-    file = BytesIO(req.content)
-    file.seek(0)
-    img = Image.open(file)
-    with BytesIO() as sticker:
-        img.save(sticker, "webp")
-        sticker.name = "sticker.webp"
-        sticker.seek(0)
-        print(sticker)
-        await borg.send_file(event.chat_id, file=sticker)
+req = requests.get("https://telegra.ph/file/0670190de8e3bddea6d95.png")
+req.raise_for_status()
+file = BytesIO(req.content)
+file.seek(0)
+img = Image.open(file)
+with BytesIO() as sticker:
+    img.save(sticker, "webp")
+    sticker.name = "sticker.webp"
+    sticker.seek(0)
+    print(sticker)
+    await borg.send_file(event.chat_id, file=sticker)
         
     await alive.delete()
