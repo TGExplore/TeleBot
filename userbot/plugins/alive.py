@@ -37,5 +37,5 @@ f"` 🔸 Database Status:` **All OK 👌!**\n"
 f"` 🔹 My pro owner`: {DEFAULTUSER}\n"
 "[✨ GitHub Repository ✨](https://github.com/xditya/TeleBot)", link_preview = False)
 
-    await borg.send_file(event.chat_id, file=sticker) 
+    await borg.send_file(alive.chat_id, file=sticker) 
     await alive.delete()
