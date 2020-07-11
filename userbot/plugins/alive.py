@@ -8,19 +8,6 @@ from platform import uname
 from userbot import ALIVE_NAME
 from userbot.utils import admin_cmd
 
-from telethon.errors.rpcerrorlist import StickersetInvalidError
-from telethon.errors import MessageNotModifiedError
-from telethon.tl.functions.account import UpdateNotifySettingsRequest
-from telethon.tl.functions.messages import GetStickerSetRequest
-from telethon.tl.types import (
-    DocumentAttributeFilename,
-    DocumentAttributeSticker,
-    InputMediaUploadedDocument,
-    InputPeerNotifySettings,
-    InputStickerSetID,
-    InputStickerSetShortName,
-    MessageMediaPhoto
-)
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "No name set yet, check pinned in @TeleBotHelp"
 
@@ -35,7 +22,7 @@ async def amireallyalive(alive):
 ` 🔹 Bot created by:` [Aditya 🇮🇳](tg://user?id=719195224)
 ` 🔸 Database Status:` **All OK 👌!**
 ` 🔹 My pro owner`: {DEFAULTUSER}
-[✨ GitHub Repository ✨](https://github.com/xditya/TeleBot)""")
+[✨ GitHub Repository ✨](https://github.com/xditya/TeleBot)""", link_preview = False)
 
     #await borg.forward_messages(alive.chat_id, 167, -1001195912925)
     await alive.delete()
