@@ -16,7 +16,7 @@ async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     
     await borg.send_message(alive.chat_id, """**Welcome To TeleBot **
-        "**`Hey! I'm alive. All systems online and functioning normally!`**
+**`Hey! I'm alive. All systems online and functioning normally!`**
 ` 🔸 Telethon version:` **1.15.0**\n` 🔹 Python:` **3.8.3**
 ` 🔸 More info:` [TeleBot](https://telegra.ph/TeleBot-07-08)
 ` 🔹 Bot created by:` [Aditya 🇮🇳](tg://user?id=719195224)
